@@ -30,17 +30,20 @@
                                 <rect key="frame" x="0.0" y="67.5" width="375" height="535.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="Ewu-jU-og1" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="110" id="Ewu-jU-og1" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ewu-jU-og1" id="1fV-Ff-cy5">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ewu-jU-og1" id="1fV-Ff-cy5">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="QUJ-9b-Qxa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="x8v-0i-MJc"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puh-ku-b70">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puh-ku-b70">
                                                     <rect key="frame" x="109" y="44.5" width="157" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="3fC-0x-ped"/>
@@ -53,10 +56,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="QUJ-9b-Qxa" secondAttribute="trailing" id="DYb-FU-z4g"/>
-                                                <constraint firstItem="QUJ-9b-Qxa" firstAttribute="top" secondItem="1fV-Ff-cy5" secondAttribute="top" id="PaM-6w-Nne"/>
-                                                <constraint firstAttribute="bottom" secondItem="QUJ-9b-Qxa" secondAttribute="bottom" id="Uum-jQ-Znm"/>
+                                                <constraint firstAttribute="bottom" secondItem="QUJ-9b-Qxa" secondAttribute="bottom" constant="3" id="Hwj-Il-G4J"/>
                                                 <constraint firstItem="QUJ-9b-Qxa" firstAttribute="leading" secondItem="1fV-Ff-cy5" secondAttribute="leading" id="XPs-D9-iRe"/>
                                                 <constraint firstItem="puh-ku-b70" firstAttribute="centerX" secondItem="1fV-Ff-cy5" secondAttribute="centerX" id="bpg-pM-5fm"/>
+                                                <constraint firstItem="QUJ-9b-Qxa" firstAttribute="top" secondItem="1fV-Ff-cy5" secondAttribute="top" constant="3" id="cMy-rE-3t4"/>
                                                 <constraint firstItem="puh-ku-b70" firstAttribute="centerY" secondItem="1fV-Ff-cy5" secondAttribute="centerY" id="iGR-sJ-xbG"/>
                                             </constraints>
                                         </tableViewCellContentView>
