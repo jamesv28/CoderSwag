@@ -1,10 +1,4 @@
-//
-//  Category.swift
-//  CoderSwag
-//
-//  Created by James Volmert on 9/23/18.
-//  Copyright © 2018 James Volmert. All rights reserved.
-//
+
 
 import Foundation
 
